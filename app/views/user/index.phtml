@@ -1,0 +1,32 @@
+<h1>User Index view</h1>
+<!--print $single data-->
+<?php if(property_exists($single, 'id')): ?>
+	<table border="1">
+	<thead><tr><td>id</td><td>email</td><td>created at</td><td>updated at</td></tr></thead>
+	<tbody>
+	<tr>
+	<td><?=$single->id?></td>
+	<td><?=$single->email?></td>
+	<td><?=$single->created_at?></td>
+	<td><?=$single->updated_at?></td>
+	</tr>
+	</tbody>
+	</table>
+<?php endif; ?>
+<hr/>
+
+<!--print all users data-->
+<table border="1">
+<thead><tr><td>id</td><td>email</td><td>created at</td><td>updated at</td></tr></thead>
+<tbody>
+<?php foreach ($all as $user): ?>
+
+	<tr>
+	<td><?= $user->id?></td>
+	<td><?= $user->email?></td>
+	<td><?=$user->created_at?></td>
+	<td><?=$user->updated_at?></td>
+	</tr>
+<?php endforeach; ?>
+</tbody>
+</table>
