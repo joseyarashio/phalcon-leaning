@@ -1,1 +1,2 @@
 learning-phalcon
+This project are some example about the phalcon-framework, I looked online lecture and tried some practice. If you are insterest in it, here's a link to the teaching video(https://www.udemy.com/phalconphp/learn/). And you can make some try same us me. good luck.

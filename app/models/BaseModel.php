@@ -14,9 +14,4 @@ class BaseModel extends \Phalcon\Mvc\Model
 	{
 		$this->updated_at = date("Y-m-d H:i:s");
 	}
-	/*
-	public function getSource(){
-		return 'users';
-	}
-	*/
 }
