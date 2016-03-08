@@ -1,3 +1,4 @@
+
 <?php
 
 class UserController extends \Phalcon\Mvc\Controller
@@ -13,7 +14,6 @@ class UserController extends \Phalcon\Mvc\Controller
 	}
 	public function createAction()//create user and insert into model
 	{
-
 		$user = new User();
 		$user->email="test@test.com";
 		$user->password="test";
@@ -29,7 +29,28 @@ class UserController extends \Phalcon\Mvc\Controller
 		}
 			
 	}
-		
+	public function createAssocAction($user_id){//This functon is used for Associative property 
+		$user=User::findFirstById($user_id);
+		if($user&&$user->deleted!=1){
+			$project= new Project();
+			$project->user=$user;
+			$project->title='MoonWalker';
+			$result=$project->create();
+			if(!$result)
+			{
+				print_r($user->getMessages());
+			}
+			else
+			{
+				echo "project(id:".$project->id.",user_id:".$user_id.") create success!<br>";
+			}
+		}
+		else{
+			echo"We have no this user !<br>";
+			die;
+		}
+
+	}
 	public function updateAction($id)//update user info
 	{
 		$user = User::findFirstById($id);

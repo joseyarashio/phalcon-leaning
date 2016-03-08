@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Project Index </title>
 </head>
 <body>
-	
+	<h1>Project</h1>
+	<table  border="1">
+	<tr><td>project_id</td><td>title</td><td>user_id</td><td>created_at</td><td>updated_at</td></tr>
+	<?php foreach($all as $project): ?>
+		<tr>
+			<td><?=$project->id?></td>
+			<td><?=$project->title?></td>
+			<td><?=$project->user_id?></td>
+			<td><?=$project->created_at?></td>
+			<td><?=$project->updated_at?></td>
+		</tr>
+	<?php endforeach?>
+	</table>
 </body>
 </html>
