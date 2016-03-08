@@ -15,8 +15,8 @@ class LoginController extends \Phalcon\Mvc\Controller
 		
 		$this->view->setVar('user',$username);
 		$this->view->setVar('age',$age);
+		// test save
 	}
-
 
 }
 
