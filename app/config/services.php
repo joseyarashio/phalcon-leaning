@@ -36,7 +36,7 @@
         $view = new View();
 
         $view->setViewsDir($config->application->viewsDir);
-        /*
+
         $view->registerEngines(array(
             '.volt' => function ($view, $di) use ($config) {
 
@@ -51,7 +51,7 @@
             },
             '.phtml' => 'Phalcon\Mvc\View\Engine\Php'
         ));
-        */
+
         return $view;
     });
 
