@@ -7,7 +7,8 @@ class IndexController extends ControllerBase
     {
     	echo "Hello World !!!";
     }
-    public function startSessionAction(){
+    public function startSessionAction()
+    {
         $this->session->set('user',[
             'name'=>'Johnny',
             'age'=>27,

@@ -1,6 +1,6 @@
 <?php
 
-	class UserController extends \Phalcon\Mvc\Controller
+	class UserController extends ControllerBase
 	{
 		public function indexAction()//default Action
 		{

@@ -1,8 +1,8 @@
 <?php
 /**
-* 
+*
 */
-class ProjectController extends \Phalcon\Mvc\Controller
+class ProjectController extends ControllerBase
 {
 	public function indexAction(){
 		$this->view->setVars([
