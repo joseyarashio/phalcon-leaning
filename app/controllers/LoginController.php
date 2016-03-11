@@ -2,11 +2,11 @@
 
 class LoginController extends ControllerBase
 {
-	public function onConstruct(){echo 1;}
-
-	public function initialize(){
-		$this->view->setTemplateAfter('default');
-	}
+	// public function onConstruct(){echo 1;}
+	//
+	// public function initialize(){
+	// 	$this->view->setTemplateAfter('default');
+	// }
 
 	public function indexAction(){
 		echo "Login !!!";

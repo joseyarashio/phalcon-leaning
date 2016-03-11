@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <?php $this->assets->outputJs()?>
-        <?php $this->assets->outputCss()?>
+        <?php $this->assets->outputJs('style')?>
+        <?php $this->assets->outputCss('js')?>
     </head>
     <body>
         <div id="header">
